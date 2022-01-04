@@ -57,7 +57,115 @@ void Sculptor::cutVoxel(int x, int y, int z){
         v[x][y][z].isOn = false ;
     }
 }
+void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1){
+    if(x0<0){
+        x0=0;
+    }
+    if(x1 >= nx){
+        x1=nx-1;
+    }
+    if(y0<0){
+        y0=0;
+    }
+    if(y1>=ny){
+        y1=ny-1;
+    }
+    if(z0<0){
+        z0=0;
+    }
+    if(z1>=nz){
+        z1=nz-1;
+    }
+    for(int x=x0;x<=x1;x++){
+        for (int y=y0;y<=y1;y++) {
+            for ( int z=z0;z<=z1;z++) {
+                v[x][y][z].isOn = false;
+            }
+        }
+    }
+}
+void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius){
+    
+    if((xcenter<0)|| (ycenter<0)|| (zcenter<0)|| (xcenter>nx)|| (ycenter>ny)|| (zcenter>nz)|| radius <=0){
+        return;
+    }
+    double r = (double)radius * (double)radius;
+    for ( int x = 0 ; x <nx; x++) {
+        for ( int y = 0 ; y <ny; y++) {
+            for ( int z = 0 ; z <nz; z++) {
+                if( ( (double)(x-xcenter)*(double)(x-xcenter) + 
+                        (double)(y-ycenter)*(double)(y-ycenter) + 
+                        (double)(z-zcenter)*(double)(z-zcenter)) < r){
+                    v[x][y][z].r = r;
+                    v[x][y][z].g = g;
+                    v[x][y][z].b = b;
+                    v[x][y][z].a = a;
+                    v[x][y][z].isOn = true;
+                }
+            }
+        }
+    }
+}
 
+void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius){
+    
+    if((xcenter<0)|| (ycenter<0)|| (zcenter<0)|| (xcenter>nx)|| (ycenter>ny)|| (zcenter>nz)|| radius <=0){
+        return;
+    }
+    double r = (double)radius * (double)radius;
+    for ( int x = 0 ; x <nx; x++) {
+        for ( int y = 0 ; y <ny; y++) {
+            for ( int z = 0 ; z <nz; z++) {
+                if( ( (double)(x-xcenter)*(double)(x-xcenter) + 
+                        (double)(y-ycenter)*(double)(y-ycenter) + 
+                        (double)(z-zcenter)*(double)(z-zcenter)) < r){
+                    v[x][y][z].isOn = false;
+                }
+            }
+        }
+    }
+}
+void Sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz){
+    if((xcenter<0)|| (ycenter<0)|| (zcenter<0)|| (xcenter>nx)|| (ycenter>ny)|| (zcenter>nz)|| rx <0 || ry <0 || rz <0){
+        return;
+    }
+    
+    for ( int x = 0 ; x <nx; x++) {
+        for ( int y = 0 ; y <ny; y++) {
+            for ( int z = 0 ; z <nz; z++) {
+                double res = ( (double)(x-xcenter)*(double)(x-xcenter) )/( (double)rx*(double)rx)+
+                ( (double)(y-ycenter)*(double)(y-ycenter) )/( (double)ry*(double)ry)+
+                ( (double)(z-zcenter)*(double)(z-zcenter) )/( (double)rz*(double)rz);
+                //Eu tirei as pontas pq achei que fica melhor, para colocar as pontas coloque "res<=1" no if
+                if( res < 1 ){
+                    v[x][y][z].r = r;
+                    v[x][y][z].g = g;
+                    v[x][y][z].b = b;
+                    v[x][y][z].a = a;
+                    v[x][y][z].isOn = true;
+                }
+            }
+        }
+    }
+}
+void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz){
+    if((xcenter<0)|| (ycenter<0)|| (zcenter<0)|| (xcenter>nx)|| (ycenter>ny)|| (zcenter>nz)|| rx <0 || ry <0 || rz <0){
+        return;
+    }
+    
+    for ( int x = 0 ; x <nx; x++) {
+        for ( int y = 0 ; y <ny; y++) {
+            for ( int z = 0 ; z <nz; z++) {
+                double res = ( (double)(x-xcenter)*(double)(x-xcenter) )/( (double)rx*(double)rx)+
+                ( (double)(y-ycenter)*(double)(y-ycenter) )/( (double)ry*(double)ry)+
+                ( (double)(z-zcenter)*(double)(z-zcenter) )/( (double)rz*(double)rz);
+                if( res < 1 ){
+                    v[x][y][z].isOn = false;
+                }
+            }
+        }
+    }
+}
 void Sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1){
     if(x0<0){
         x0=0;
