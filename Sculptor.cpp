@@ -89,13 +89,13 @@ void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius){
     if((xcenter<0)|| (ycenter<0)|| (zcenter<0)|| (xcenter>nx)|| (ycenter>ny)|| (zcenter>nz)|| radius <=0){
         return;
     }
-    double r = (double)radius * (double)radius;
+    double raio = (double)radius * (double)radius;
     for ( int x = 0 ; x <nx; x++) {
         for ( int y = 0 ; y <ny; y++) {
             for ( int z = 0 ; z <nz; z++) {
                 if( ( (double)(x-xcenter)*(double)(x-xcenter) + 
                         (double)(y-ycenter)*(double)(y-ycenter) + 
-                        (double)(z-zcenter)*(double)(z-zcenter)) < r){
+                        (double)(z-zcenter)*(double)(z-zcenter)) < raio){
                     v[x][y][z].r = r;
                     v[x][y][z].g = g;
                     v[x][y][z].b = b;
