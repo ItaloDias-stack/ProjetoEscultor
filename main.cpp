@@ -7,7 +7,7 @@ int main() {
     
     //Iglu
     Sculptor escultura(100,100,100);
-    escultura.setColor(1,1,1,0.75);
+    escultura.setColor(0,1,1,0.75);
     escultura.putSphere(10,10,6,12);
     
     //Chao

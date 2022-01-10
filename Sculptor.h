@@ -13,7 +13,7 @@ protected:
     Voxel ***v;
     int nx,ny,nz; 
     float r,g,b,a;
-    bool isOn;
+    
 public:
     Sculptor();
     Sculptor(const Sculptor& orig);
