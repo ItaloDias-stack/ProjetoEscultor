@@ -22,10 +22,10 @@ Sculptor::Sculptor(int x, int y, int z) {
     for(int i=0;i<nx;i++){
         for ( int j = 0 ; j <ny; j ++) {
             for ( int k = 0 ; k <nz; k ++) {
-                v[i][j][k].r = 0 ;
-                v[i][j][k].g = 0 ;
-                v[i][j][k].b = 0 ;
-                v[i][j][k].a = 0 ;
+                v[i][j][k].r = 0.0 ;
+                v[i][j][k].g = 0.0 ;
+                v[i][j][k].b = 0.0 ;
+                v[i][j][k].a = 0.0 ;
                 v[i][j][k].isOn = false ;
             }
 
