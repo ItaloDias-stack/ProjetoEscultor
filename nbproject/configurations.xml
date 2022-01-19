@@ -4,19 +4,17 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
-      <itemPath>CutVoxel.h</itemPath>
       <itemPath>FiguraGeometrica.h</itemPath>
       <itemPath>PutBox.h</itemPath>
-      <itemPath>PutVoxel.h</itemPath>
+      <itemPath>PutSphere.h</itemPath>
       <itemPath>Sculptor.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
-      <itemPath>CutVoxel.cpp</itemPath>
       <itemPath>FiguraGeometrica.cpp</itemPath>
       <itemPath>PutBox.cpp</itemPath>
-      <itemPath>PutVoxel.cpp</itemPath>
+      <itemPath>PutSphere.cpp</itemPath>
       <itemPath>Sculptor.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -46,10 +44,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="CutVoxel.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="CutVoxel.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="FiguraGeometrica.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FiguraGeometrica.h" ex="false" tool="3" flavor2="0">
@@ -58,9 +52,9 @@
       </item>
       <item path="PutBox.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="PutVoxel.cpp" ex="false" tool="1" flavor2="0">
+      <item path="PutSphere.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="PutVoxel.h" ex="false" tool="3" flavor2="0">
+      <item path="PutSphere.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Sculptor.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -89,10 +83,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="CutVoxel.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="CutVoxel.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="FiguraGeometrica.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FiguraGeometrica.h" ex="false" tool="3" flavor2="0">
@@ -101,9 +91,9 @@
       </item>
       <item path="PutBox.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="PutVoxel.cpp" ex="false" tool="1" flavor2="0">
+      <item path="PutSphere.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="PutVoxel.h" ex="false" tool="3" flavor2="0">
+      <item path="PutSphere.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Sculptor.cpp" ex="false" tool="1" flavor2="0">
       </item>

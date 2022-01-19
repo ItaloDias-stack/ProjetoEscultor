@@ -35,10 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/CutVoxel.o \
 	${OBJECTDIR}/FiguraGeometrica.o \
 	${OBJECTDIR}/PutBox.o \
-	${OBJECTDIR}/PutVoxel.o \
+	${OBJECTDIR}/PutSphere.o \
 	${OBJECTDIR}/Sculptor.o \
 	${OBJECTDIR}/main.o
 
@@ -67,11 +66,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetoescultor.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetoescultor ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/CutVoxel.o: CutVoxel.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutVoxel.o CutVoxel.cpp
-
 ${OBJECTDIR}/FiguraGeometrica.o: FiguraGeometrica.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -82,10 +76,10 @@ ${OBJECTDIR}/PutBox.o: PutBox.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutBox.o PutBox.cpp
 
-${OBJECTDIR}/PutVoxel.o: PutVoxel.cpp
+${OBJECTDIR}/PutSphere.o: PutSphere.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutVoxel.o PutVoxel.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutSphere.o PutSphere.cpp
 
 ${OBJECTDIR}/Sculptor.o: Sculptor.cpp
 	${MKDIR} -p ${OBJECTDIR}
