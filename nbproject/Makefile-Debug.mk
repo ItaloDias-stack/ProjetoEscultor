@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/CutSphere.o \
 	${OBJECTDIR}/FiguraGeometrica.o \
 	${OBJECTDIR}/PutBox.o \
 	${OBJECTDIR}/PutSphere.o \
@@ -65,6 +66,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetoescultor.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetoescultor ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/CutSphere.o: CutSphere.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutSphere.o CutSphere.cpp
 
 ${OBJECTDIR}/FiguraGeometrica.o: FiguraGeometrica.cpp
 	${MKDIR} -p ${OBJECTDIR}

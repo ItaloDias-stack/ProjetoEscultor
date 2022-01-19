@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
+      <itemPath>CutSphere.h</itemPath>
       <itemPath>FiguraGeometrica.h</itemPath>
       <itemPath>PutBox.h</itemPath>
       <itemPath>PutSphere.h</itemPath>
@@ -12,6 +13,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
+      <itemPath>CutSphere.cpp</itemPath>
       <itemPath>FiguraGeometrica.cpp</itemPath>
       <itemPath>PutBox.cpp</itemPath>
       <itemPath>PutSphere.cpp</itemPath>
@@ -44,6 +46,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="CutSphere.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CutSphere.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="FiguraGeometrica.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FiguraGeometrica.h" ex="false" tool="3" flavor2="0">
@@ -83,6 +89,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="CutSphere.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CutSphere.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="FiguraGeometrica.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FiguraGeometrica.h" ex="false" tool="3" flavor2="0">
