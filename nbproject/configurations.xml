@@ -5,9 +5,12 @@
                    displayName="Arquivos de Cabeçalho"
                    projectFiles="true">
       <itemPath>CutBox.h</itemPath>
+      <itemPath>CutEllipsoid.h</itemPath>
       <itemPath>CutSphere.h</itemPath>
       <itemPath>FiguraGeometrica.h</itemPath>
+      <itemPath>Interpretador.h</itemPath>
       <itemPath>PutBox.h</itemPath>
+      <itemPath>PutEllipsoid.h</itemPath>
       <itemPath>PutSphere.h</itemPath>
       <itemPath>Sculptor.h</itemPath>
     </logicalFolder>
@@ -15,9 +18,12 @@
                    displayName="Arquivos de Código-Fonte"
                    projectFiles="true">
       <itemPath>CutBox.cpp</itemPath>
+      <itemPath>CutEllipsoid.cpp</itemPath>
       <itemPath>CutSphere.cpp</itemPath>
       <itemPath>FiguraGeometrica.cpp</itemPath>
+      <itemPath>Interpretador.cpp</itemPath>
       <itemPath>PutBox.cpp</itemPath>
+      <itemPath>PutEllipsoid.cpp</itemPath>
       <itemPath>PutSphere.cpp</itemPath>
       <itemPath>Sculptor.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -52,6 +58,10 @@
       </item>
       <item path="CutBox.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CutEllipsoid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CutEllipsoid.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CutSphere.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CutSphere.h" ex="false" tool="3" flavor2="0">
@@ -60,9 +70,17 @@
       </item>
       <item path="FiguraGeometrica.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Interpretador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interpretador.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="PutBox.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PutBox.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PutEllipsoid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PutEllipsoid.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PutSphere.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -99,6 +117,10 @@
       </item>
       <item path="CutBox.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="CutEllipsoid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CutEllipsoid.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="CutSphere.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="CutSphere.h" ex="false" tool="3" flavor2="0">
@@ -107,9 +129,17 @@
       </item>
       <item path="FiguraGeometrica.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Interpretador.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Interpretador.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="PutBox.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="PutBox.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="PutEllipsoid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="PutEllipsoid.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PutSphere.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -36,9 +36,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/CutBox.o \
+	${OBJECTDIR}/CutEllipsoid.o \
 	${OBJECTDIR}/CutSphere.o \
 	${OBJECTDIR}/FiguraGeometrica.o \
+	${OBJECTDIR}/Interpretador.o \
 	${OBJECTDIR}/PutBox.o \
+	${OBJECTDIR}/PutEllipsoid.o \
 	${OBJECTDIR}/PutSphere.o \
 	${OBJECTDIR}/Sculptor.o \
 	${OBJECTDIR}/main.o
@@ -73,6 +76,11 @@ ${OBJECTDIR}/CutBox.o: CutBox.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutBox.o CutBox.cpp
 
+${OBJECTDIR}/CutEllipsoid.o: CutEllipsoid.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutEllipsoid.o CutEllipsoid.cpp
+
 ${OBJECTDIR}/CutSphere.o: CutSphere.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -83,10 +91,20 @@ ${OBJECTDIR}/FiguraGeometrica.o: FiguraGeometrica.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FiguraGeometrica.o FiguraGeometrica.cpp
 
+${OBJECTDIR}/Interpretador.o: Interpretador.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Interpretador.o Interpretador.cpp
+
 ${OBJECTDIR}/PutBox.o: PutBox.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutBox.o PutBox.cpp
+
+${OBJECTDIR}/PutEllipsoid.o: PutEllipsoid.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutEllipsoid.o PutEllipsoid.cpp
 
 ${OBJECTDIR}/PutSphere.o: PutSphere.cpp
 	${MKDIR} -p ${OBJECTDIR}
