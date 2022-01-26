@@ -4,6 +4,7 @@
 #include <vector>
 #include "FiguraGeometrica.h"
 #include <string>
+using namespace std;
 class Interpretador {
     int dimx,dimy,dimz;
     float r,g,b,a;

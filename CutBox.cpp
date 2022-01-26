@@ -1,6 +1,7 @@
 #include "CutBox.h"
-
-CutBox::CutBox(int x0,int x1,int y0,int y1,int z1,int z0, float r,float g,float b,float a){
+#include "FiguraGeometrica.h"
+#include "Sculptor.h"
+CutBox::CutBox(int x0,int x1,int y0,int y1,int z1,int z0){
     this->x0 = x0;
     this->x1 = x1;
     this->y1 = y1;
@@ -11,7 +12,7 @@ CutBox::CutBox(int x0,int x1,int y0,int y1,int z1,int z0, float r,float g,float 
 
 CutBox::CutBox(const CutBox& orig) {
 }
-void PutBox::draw(Sculptor &t){
+void CutBox::draw(Sculptor &t){
     for(int i=x0; i<x1;i++){
         for(int j=y0;j<y1;j++){
             for(int k=z0;k<z1;k++){

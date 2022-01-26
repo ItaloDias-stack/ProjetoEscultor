@@ -1,12 +1,18 @@
 #include "Interpretador.h"
 #include "PutBox.h"
+#include "CutBox.h"
 #include "PutSphere.h"
+#include "CutSphere.h"
 #include "PutEllipsoid.h"
-#include  <iostream>
-#include  <vector>
-#include  <string>
-#include  <fstream>
-#include  <sstream>
+#include "CutEllipsoid.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
+#include <sstream>
+
+using namespace std;
+
 Interpretador::Interpretador() {
 }
 
@@ -59,7 +65,7 @@ vector<FiguraGeometrica *> Interpretador::parse(std::string nomeArquivo){
             if (t.compare("cutSphere")==0 ) {
                 int xc,yc, zc,raio;
                 stringStream >> xc>>yc >> zc>>raio;
-                figuras.push_back(new PutSphere(xc,yc,zc,raio));
+                figuras.push_back(new CutSphere(xc,yc,zc,raio));
             }
             
             if (t.compare("putEllipsoid")==0 ) {

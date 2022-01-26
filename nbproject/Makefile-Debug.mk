@@ -74,52 +74,52 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/projetoescultor.exe: ${OBJECTFILES}
 ${OBJECTDIR}/CutBox.o: CutBox.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutBox.o CutBox.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutBox.o CutBox.cpp
 
 ${OBJECTDIR}/CutEllipsoid.o: CutEllipsoid.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutEllipsoid.o CutEllipsoid.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutEllipsoid.o CutEllipsoid.cpp
 
 ${OBJECTDIR}/CutSphere.o: CutSphere.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutSphere.o CutSphere.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CutSphere.o CutSphere.cpp
 
 ${OBJECTDIR}/FiguraGeometrica.o: FiguraGeometrica.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FiguraGeometrica.o FiguraGeometrica.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FiguraGeometrica.o FiguraGeometrica.cpp
 
 ${OBJECTDIR}/Interpretador.o: Interpretador.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Interpretador.o Interpretador.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Interpretador.o Interpretador.cpp
 
 ${OBJECTDIR}/PutBox.o: PutBox.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutBox.o PutBox.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutBox.o PutBox.cpp
 
 ${OBJECTDIR}/PutEllipsoid.o: PutEllipsoid.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutEllipsoid.o PutEllipsoid.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutEllipsoid.o PutEllipsoid.cpp
 
 ${OBJECTDIR}/PutSphere.o: PutSphere.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutSphere.o PutSphere.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PutSphere.o PutSphere.cpp
 
 ${OBJECTDIR}/Sculptor.o: Sculptor.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sculptor.o Sculptor.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sculptor.o Sculptor.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -Ibuild/Debug/MinGW-Windows -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

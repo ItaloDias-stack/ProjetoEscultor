@@ -1,5 +1,5 @@
 #include "CutEllipsoid.h"
-
+#include "Sculptor.h"
 CutEllipsoid::CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz) {
     if((xcenter>0)|| (ycenter>0)|| (zcenter>0)|| (rx>=0)|| (ry>=0)|| (rz>=0)){
         this->xcenter=xcenter;
@@ -11,7 +11,7 @@ CutEllipsoid::CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry
     }
 }
 
-void PutEllipsoid::draw(Sculptor &e){
+void CutEllipsoid::draw(Sculptor &e){
     for ( int x = 0 ; x <xcenter+rx; x++) {
         for ( int y = 0 ; y <ycenter+ry; y++) {
             for ( int z = 0 ; z <zcenter+rz; z++) {
