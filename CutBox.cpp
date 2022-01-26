@@ -1,7 +1,7 @@
 #include "CutBox.h"
 #include "FiguraGeometrica.h"
 #include "Sculptor.h"
-CutBox::CutBox(int x0,int x1,int y0,int y1,int z1,int z0){
+CutBox::CutBox(int x0,int x1,int y0,int y1,int z0,int z1){
     this->x0 = x0;
     this->x1 = x1;
     this->y1 = y1;

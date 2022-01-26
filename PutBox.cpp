@@ -3,7 +3,7 @@
 #include "Sculptor.h"
 PutBox::PutBox() {
 }
-PutBox::PutBox(int x0,int x1,int y0,int y1,int z1,int z0, float r,float g,float b,float a){
+PutBox::PutBox(int x0,int x1,int y0,int y1,int z0,int z1, float r,float g,float b,float a){
     this->x0 = x0;
     this->x1 = x1;
     this->y1 = y1;

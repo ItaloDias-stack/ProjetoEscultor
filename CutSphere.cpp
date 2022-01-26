@@ -16,13 +16,13 @@ CutSphere::CutSphere(int xc,int yc,int zc,int raio) {
 CutSphere::CutSphere(const CutSphere& orig) {
 }
 void CutSphere::draw(Sculptor &e){
-    double raio = (double)raio * (double)raio;
+    double r = (double)raio * (double)raio;
     for ( int x = 0 ; x <xc+raio; x++) {
         for ( int y = 0 ; y <yc+raio; y++) {
             for ( int z = 0 ; z <zc+raio; z++) {
                 if( ( (double)(x-xc)*(double)(x-xc) + 
                         (double)(y-yc)*(double)(y-yc) + 
-                        (double)(z-zc)*(double)(z-zc)) < raio){
+                        (double)(z-zc)*(double)(z-zc)) < r){
                     e.cutVoxel(x,y,z);
                 }
             }

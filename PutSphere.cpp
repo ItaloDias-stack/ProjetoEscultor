@@ -16,14 +16,14 @@ PutSphere::PutSphere(int xc,int yc,int zc,int raio , float r,float g,float b,flo
 PutSphere::PutSphere(const PutSphere& orig) {
 }
 void PutSphere::draw(Sculptor &e){
-    double raio = (double)raio * (double)raio;
+    double r = (double)raio * (double)raio;
     e.setColor(r,g,b,a);
-    for ( int x = 0 ; x <xc+raio; x++) {
-        for ( int y = 0 ; y <yc+raio; y++) {
-            for ( int z = 0 ; z <zc+raio; z++) {
+    for ( int x = 0 ; x <xc+this->raio; x++) {
+        for ( int y = 0 ; y <yc+this->raio; y++) {
+            for ( int z = 0 ; z <zc+this->raio; z++) {
                 if( ( (double)(x-xc)*(double)(x-xc) + 
                         (double)(y-yc)*(double)(y-yc) + 
-                        (double)(z-zc)*(double)(z-zc)) < raio){
+                        (double)(z-zc)*(double)(z-zc)) < r){
                     e.putVoxel(x,y,z);
                 }
             }
