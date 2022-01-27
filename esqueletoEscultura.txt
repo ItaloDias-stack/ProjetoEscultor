@@ -1,0 +1,14 @@
+dim  100 100 100
+putSphere 10 10 6 12 0 1 1 0.75
+putBox 0 40 0 40 0 6 1 1 1 0.75
+cutBox 0 40 0 40 0 5
+putSphere 30 30 10 5 1 1 1 0.75
+putSphere 30 30 16 3 1 1 1 0.75
+putSphere 32 32 17 1 0.3 0.5 0.5 0
+putSphere 28 32 17 1 0.3 0.5 0.5 0
+putBox 22 38 30 31 10 11 0 0 0 0.75
+putBox 29 30 31 32 14 15 0 0 0 0.75
+cutBox 8 12 3 35 7 10 
+cutSphere 10 10 11 5 
+
+

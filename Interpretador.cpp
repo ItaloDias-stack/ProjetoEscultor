@@ -21,12 +21,12 @@ Interpretador::Interpretador(const Interpretador& orig) {
 
 Interpretador::~Interpretador() {
 }
-vector<FiguraGeometrica *> Interpretador::parse(std::string nomeArquivo){
+vector<FiguraGeometrica *> Interpretador::interpretarArquivos(std::string nomeArquivo){
     vector<FiguraGeometrica *> figuras;
     std::ifstream fileIn;
     std::stringstream stringStream;
     std::string lineString,t;
-    
+    float r,g,b,a;
     fileIn.open(nomeArquivo);
     
     if(!fileIn.is_open()){
