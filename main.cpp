@@ -14,12 +14,9 @@ int main() {
     
     for(int i=0;i<dados.size();i++){
         dados[i]->draw(*escultura);
-    }
-    escultura->writeOFF("escultura.off");
-    for(int i=0;i<dados.size();i++){
         delete dados[i];
     }
-    
+    escultura->writeOFF("escultura.off");
     return 0;
 }
 
